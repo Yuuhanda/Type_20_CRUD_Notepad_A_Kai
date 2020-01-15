@@ -31,6 +31,11 @@ class show : AppCompatActivity() {
             startActivity(intent)
         }
 
+        info_button.setOnClickListener(){
+            intent = Intent(this, InfoPage::class.java)
+            startActivity(intent)
+        }
+
         ref.addValueEventListener(object : ValueEventListener {
             override fun onCancelled(p0: DatabaseError) {
                 TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
